@@ -1,0 +1,13 @@
+{
+  "executedAt": "2026-10-09T11:12:33.121Z",
+  "storage": "file-demo",
+  "manualSelectionPersists": true,
+  "manualDestinationArrivalRejected": true,
+  "graphDerivedTurns": true,
+  "crossFloorElevator": true,
+  "exactGraphCostPreserved": true,
+  "qrPositionAndRouteUpdated": true,
+  "destinationQrArrivalCreatesTicket": true,
+  "initialDistance": 110,
+  "reroutedDistance": 84
+}

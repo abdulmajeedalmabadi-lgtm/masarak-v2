@@ -1,0 +1,14 @@
+{
+  "executedAt": "2026-10-08T18:50:33.727Z",
+  "storage": "file-demo",
+  "health": true,
+  "initialDistanceMeters": 20,
+  "wrongTurnDistanceMeters": 30,
+  "queueCalled": true,
+  "extraTimeExtended": true,
+  "stageCompleted": true,
+  "nextStage": "doctor",
+  "accessibleCrossFloorUsesElevator": true,
+  "qrPNGGenerated": true,
+  "secretsIncluded": false
+}

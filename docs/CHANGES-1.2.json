@@ -1,0 +1,28 @@
+{
+  "version": "1.2.0",
+  "modifiedOrAdded": [
+    ".env.example",
+    "README.md",
+    "docs/API.md",
+    "docs/CHANGES-1.2.json",
+    "docs/NAVIGATION-3D.md",
+    "docs/VALIDATION.md",
+    "docs/navigation-live-smoke.json",
+    "package-lock.json",
+    "package.json",
+    "scripts/smoke-navigation.ts",
+    "server/app.ts",
+    "shared/guidance.ts",
+    "src/App.tsx",
+    "src/CorridorScene.tsx",
+    "src/Map.tsx",
+    "src/Navigation3D.tsx",
+    "src/i18n.ts",
+    "src/style.css",
+    "tests/api.test.ts",
+    "tests/guidance.test.ts",
+    "tests/navigation3d.test.tsx",
+    "tests/ui.test.tsx",
+    "vite.config.ts"
+  ]
+}

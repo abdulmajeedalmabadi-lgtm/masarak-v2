@@ -1,0 +1,13 @@
+# Architecture
+
+React + TypeScript + Vite + Tailwind + React Router + Lucide form the frontend. i18next owns complete UI message resources for ar/en/ur/fr/tr/id; Arabic is default/fallback, Arabic and Urdu use RTL. Theme and accessibility preferences persist in localStorage. Journey and staff bearer tokens are session-scoped; incoming URL tokens are removed from the visible route after capture.
+
+Express owns authorization and validation; UI actions are not trusted. Staff JWTs identify an active user, and clinical writes additionally verify the assigned room. Patient JWTs include a journey ID and token version and are bound to that journey's expiry. Socket handshakes authenticate these same credentials; patients join only their own journey channel, staff receive an update signal only. No patient state is broadcast in a global payload. Updates instruct each client to fetch its authorized data. HTTP fallback refreshes every 15 seconds; live socket disconnects are displayed.
+
+All mutations enter a single-process serialization queue. A state snapshot is restored if persistence fails. PostgreSQL writes use Prisma transactions and relational models; the alternative file-demo adapter writes atomically to a local JSON file. The application loads its committed state on startup. This design deliberately runs one API process and is suitable for the demonstration; high-volume operational use requires per-entity transactions/querying, a distributed socket adapter, locking and a shared queue processor.
+
+Ticket state flow: waiting → called → arrived → consulting → complete. Staff can mark a called ticket missed, recall a called/missed ticket, extend its deadline, and assign priority to a waiting ticket. A clinic has at most one called/arrived/consulting ticket. Clinical staff set urgency; equal-priority tickets are FIFO. Deadline expiry adds a staff-visible flag and patient notice; it never removes or clinically deprioritizes the ticket. Extra-time requests await staff approval. Stage completion records timestamps and activates the next pending assigned stage. Reception can replace remaining stages; previous stages are retained as skipped.
+
+The future AI interface in `server/ai.ts` accepts anonymous route steps or aggregated consultation durations. It has no provider implementation, credentials or runtime calls. A* and queue operations work without AI.
+
+Audit logs capture actor ID, API action template and timestamp. They intentionally omit request bodies and passwords. Longer-term audit review, retention, consent, identity management and hospital privacy controls require deployment-specific design and assessment.

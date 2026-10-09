@@ -1,0 +1,11 @@
+# Floor-plan and navigation contract
+
+Coordinates are SVG units: x increases right, y increases down. Each floor is 760 × 510 units. The seed has a main corridor at y=300, a south corridor at y=410, and connecting passages at x=480/580/680. A 100-unit corridor edge is ten physical meters; a connecting passage is eleven meters. Room doors connect to valid public corridors through entrance spurs.
+
+Floor corridor rectangles are database geometry (`Floor.corridors`), rendered by the SVG. The validator verifies that every complete same-floor segment is covered by their union or a declared entrance spur and never enters room interiors. It rejects diagonal edges, overlapping room/corridor geometry, nonpositive costs, missing references, unknown floors, invalid floor transitions, disconnected graphs, inaccessible required entrances and inconsistent checkpoint metadata. Add surveyed rectangles, matching nodes and edges together. Referenced rooms/nodes are preserved; checkpoints and edges can be removed with validation. Move room doors and their entrance nodes together.
+
+Each edge is bidirectional. A* minimizes supplied physical edge costs. Its admissible heuristic uses minimum cost per coordinate unit and Manhattan displacement, omitting the nonnegative floor transition cost. Tests compare all node-pair distances against an independent Dijkstra computation. Accessible routes reject stairs, inaccessible edges and inaccessible destination nodes; inter-floor routes use the elevator. The elevator cost is a simple 14m-equivalent traversal estimate, not a measured lift waiting time.
+
+Location confirmation is explicit: QR → checkpoint → graph node. Wrong-location recovery computes a new route to the active stage's entrance. The SVG renders edges only on their own floor, with arrows and current/destination markers. Checkpoint metadata is derived from nodes; printed identity survives checkpoint moves. See `QR-NAVIGATION.md` for management, printing and phone setup.
+
+Admin map publication is audited and persisted before a socket update signals clients to refetch map/version. Never publish a real map without confirming surveyed distances, public-access restrictions, elevator availability and clinical staff approval.

@@ -1,0 +1,194 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+model User {
+  id String @id
+  username String @unique
+  passwordHash String
+  role String
+  active Boolean @default(true)
+  profile StaffProfile?
+  preference UserPreference?
+}
+model StaffProfile {
+  id String @id
+  userId String @unique
+  user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+  roomId String?
+  room Room? @relation(fields:[roomId],references:[id])
+}
+model Hospital {
+  id String @id
+  name String
+  version Int @default(1)
+  floors Floor[]
+  departments Department[]
+  checkpoints QRCheckpoint[]
+}
+model Floor {
+  id String @id
+  number Int
+  name String
+  corridors Json
+  hospitalId String
+  hospital Hospital @relation(fields:[hospitalId],references:[id])
+  rooms Room[]
+  nodes MapNode[]
+  checkpoints QRCheckpoint[]
+  @@unique([hospitalId,number])
+}
+model Department {
+  id String @id
+  names Json
+  type String
+  hospitalId String
+  hospital Hospital @relation(fields:[hospitalId],references:[id])
+  rooms Room[]
+}
+model Room {
+  id String @id
+  names Json
+  number String
+  x Float
+  y Float
+  width Float
+  height Float
+  accessible Boolean
+  floorId String
+  floor Floor @relation(fields:[floorId],references:[id])
+  departmentId String
+  department Department @relation(fields:[departmentId],references:[id])
+  nodeId String @unique
+  node MapNode @relation(fields:[nodeId],references:[id])
+  staff StaffProfile[]
+  stages JourneyStage[]
+  tickets QueueTicket[]
+  clinic ClinicStatus?
+}
+model MapNode {
+  id String @id
+  x Float
+  y Float
+  kind String
+  accessible Boolean
+  floorId String
+  floor Floor @relation(fields:[floorId],references:[id])
+  fromEdges MapEdge[] @relation("From")
+  toEdges MapEdge[] @relation("To")
+  room Room?
+  checkpoints QRCheckpoint[]
+}
+model MapEdge {
+  id String @id
+  fromId String
+  toId String
+  from MapNode @relation("From",fields:[fromId],references:[id])
+  to MapNode @relation("To",fields:[toId],references:[id])
+  distance Float
+  kind String
+  accessible Boolean
+}
+model QRCheckpoint {
+  id String @id
+  nodeId String
+  node MapNode @relation(fields:[nodeId],references:[id])
+  hospitalId String
+  hospital Hospital @relation(fields:[hospitalId],references:[id])
+  floorId String
+  floor Floor @relation(fields:[floorId],references:[id])
+  x Float
+  y Float
+  locationName String
+  names Json
+  @@index([hospitalId,floorId])
+}
+model PatientJourney {
+  id String @id
+  alias String
+  tokenVersion Int @default(1)
+  expiresAt DateTime
+  location String
+  confirmedAt DateTime?
+  confirmedCheckpointId String?
+  accessible Boolean
+  createdAt DateTime @default(now())
+  stages JourneyStage[]
+  tickets QueueTicket[]
+  notifications Notification[]
+  assistance AssistanceRequest[]
+  subscriptions PushSubscription[]
+}
+model JourneyStage {
+  id String @id
+  journeyId String
+  journey PatientJourney @relation(fields:[journeyId],references:[id],onDelete:Cascade)
+  roomId String
+  room Room @relation(fields:[roomId],references:[id])
+  position Int
+  status String
+  startedAt DateTime?
+  completedAt DateTime?
+}
+model QueueTicket {
+  id String @id
+  journeyId String
+  journey PatientJourney @relation(fields:[journeyId],references:[id],onDelete:Cascade)
+  roomId String
+  room Room @relation(fields:[roomId],references:[id])
+  status String
+  priority Int
+  createdAt DateTime
+  calledAt DateTime?
+  deadline DateTime?
+  extraTime Boolean @default(false)
+  expiredReported Boolean @default(false)
+  @@index([roomId,status])
+}
+model ClinicStatus {
+  roomId String @id
+  room Room @relation(fields:[roomId],references:[id])
+  status String
+}
+model Notification {
+  id String @id
+  journeyId String
+  journey PatientJourney @relation(fields:[journeyId],references:[id],onDelete:Cascade)
+  key String
+  roomId String?
+  createdAt DateTime
+}
+model UserPreference {
+  id String @id
+  userId String @unique
+  user User @relation(fields:[userId],references:[id],onDelete:Cascade)
+  language String @default("ar")
+  theme String @default("light")
+  accessible Boolean @default(false)
+}
+model AuditLog {
+  id String @id
+  actor String
+  action String
+  createdAt DateTime @default(now())
+}
+model AssistanceRequest {
+  id String @id
+  journeyId String
+  journey PatientJourney @relation(fields:[journeyId],references:[id],onDelete:Cascade)
+  location String
+  resolved Boolean @default(false)
+  createdAt DateTime
+}
+model PushSubscription {
+  id String @id
+  journeyId String
+  journey PatientJourney @relation(fields:[journeyId],references:[id],onDelete:Cascade)
+  endpoint String
+  keys Json
+  language String
+  @@unique([journeyId,endpoint])
+}

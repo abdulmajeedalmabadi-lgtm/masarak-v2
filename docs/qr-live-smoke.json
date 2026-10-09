@@ -1,0 +1,16 @@
+{
+  "executedAt": "2026-10-09T08:35:15.111Z",
+  "storage": "file-demo",
+  "seededCheckpoints": 37,
+  "adminCRUD": true,
+  "PNGIndependentlyDecoded": true,
+  "offRouteDistanceMeters": 76,
+  "serverInstructionsReturned": true,
+  "crossFloorUsesElevator": true,
+  "printedIdentityStableAfterMove": true,
+  "receptionWriteRejected": true,
+  "deletedQRRejectedWithoutMovingPatient": true,
+  "confirmedLocationPersisted": true,
+  "continuousGPSTracking": false,
+  "physicalCameraTested": false
+}

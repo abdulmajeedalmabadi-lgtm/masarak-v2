@@ -1,0 +1,1607 @@
+{
+  "id": "masarak-hospital",
+  "name": "MASARAK",
+  "version": 1,
+  "floors": [
+    {
+      "id": 0,
+      "name": "ground",
+      "corridors": [
+        {
+          "id": "f0-main",
+          "x": 50,
+          "y": 270,
+          "width": 660,
+          "height": 60
+        },
+        {
+          "id": "f0-south",
+          "x": 150,
+          "y": 385,
+          "width": 560,
+          "height": 50
+        },
+        {
+          "id": "f0-connector-480",
+          "x": 465,
+          "y": 300,
+          "width": 30,
+          "height": 110
+        },
+        {
+          "id": "f0-connector-580",
+          "x": 565,
+          "y": 300,
+          "width": 30,
+          "height": 110
+        },
+        {
+          "id": "f0-connector-680",
+          "x": 665,
+          "y": 300,
+          "width": 30,
+          "height": 110
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "first",
+      "corridors": [
+        {
+          "id": "f1-main",
+          "x": 50,
+          "y": 270,
+          "width": 660,
+          "height": 60
+        },
+        {
+          "id": "f1-south",
+          "x": 150,
+          "y": 385,
+          "width": 560,
+          "height": 50
+        },
+        {
+          "id": "f1-connector-480",
+          "x": 465,
+          "y": 300,
+          "width": 30,
+          "height": 110
+        },
+        {
+          "id": "f1-connector-580",
+          "x": 565,
+          "y": 300,
+          "width": 30,
+          "height": 110
+        },
+        {
+          "id": "f1-connector-680",
+          "x": 665,
+          "y": 300,
+          "width": 30,
+          "height": 110
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "f0-c0",
+      "x": 80,
+      "y": 300,
+      "floor": 0,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f0-c1",
+      "x": 180,
+      "y": 300,
+      "floor": 0,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f0-c2",
+      "x": 280,
+      "y": 300,
+      "floor": 0,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f0-c3",
+      "x": 380,
+      "y": 300,
+      "floor": 0,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f0-c4",
+      "x": 480,
+      "y": 300,
+      "floor": 0,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f0-c5",
+      "x": 580,
+      "y": 300,
+      "floor": 0,
+      "kind": "elevator",
+      "accessible": true
+    },
+    {
+      "id": "f0-c6",
+      "x": 680,
+      "y": 300,
+      "floor": 0,
+      "kind": "stairs",
+      "accessible": true
+    },
+    {
+      "id": "f0-south0",
+      "x": 180,
+      "y": 410,
+      "floor": 0,
+      "kind": "corridor",
+      "accessible": true
+    },
+    {
+      "id": "f0-south1",
+      "x": 280,
+      "y": 410,
+      "floor": 0,
+      "kind": "corridor",
+      "accessible": true
+    },
+    {
+      "id": "f0-south2",
+      "x": 380,
+      "y": 410,
+      "floor": 0,
+      "kind": "corridor",
+      "accessible": true
+    },
+    {
+      "id": "f0-south3",
+      "x": 480,
+      "y": 410,
+      "floor": 0,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f0-south4",
+      "x": 580,
+      "y": 410,
+      "floor": 0,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f0-south5",
+      "x": 680,
+      "y": 410,
+      "floor": 0,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f1-c0",
+      "x": 80,
+      "y": 300,
+      "floor": 1,
+      "kind": "corridor",
+      "accessible": true
+    },
+    {
+      "id": "f1-c1",
+      "x": 180,
+      "y": 300,
+      "floor": 1,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f1-c2",
+      "x": 280,
+      "y": 300,
+      "floor": 1,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f1-c3",
+      "x": 380,
+      "y": 300,
+      "floor": 1,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f1-c4",
+      "x": 480,
+      "y": 300,
+      "floor": 1,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f1-c5",
+      "x": 580,
+      "y": 300,
+      "floor": 1,
+      "kind": "elevator",
+      "accessible": true
+    },
+    {
+      "id": "f1-c6",
+      "x": 680,
+      "y": 300,
+      "floor": 1,
+      "kind": "stairs",
+      "accessible": true
+    },
+    {
+      "id": "f1-south0",
+      "x": 180,
+      "y": 410,
+      "floor": 1,
+      "kind": "corridor",
+      "accessible": true
+    },
+    {
+      "id": "f1-south1",
+      "x": 280,
+      "y": 410,
+      "floor": 1,
+      "kind": "corridor",
+      "accessible": true
+    },
+    {
+      "id": "f1-south2",
+      "x": 380,
+      "y": 410,
+      "floor": 1,
+      "kind": "corridor",
+      "accessible": true
+    },
+    {
+      "id": "f1-south3",
+      "x": 480,
+      "y": 410,
+      "floor": 1,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f1-south4",
+      "x": 580,
+      "y": 410,
+      "floor": 1,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "f1-south5",
+      "x": 680,
+      "y": 410,
+      "floor": 1,
+      "kind": "intersection",
+      "accessible": true
+    },
+    {
+      "id": "door-reception",
+      "x": 80,
+      "y": 250,
+      "floor": 0,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-triage",
+      "x": 180,
+      "y": 250,
+      "floor": 0,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-emergency",
+      "x": 280,
+      "y": 250,
+      "floor": 0,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-lab",
+      "x": 380,
+      "y": 250,
+      "floor": 0,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-waiting0",
+      "x": 480,
+      "y": 250,
+      "floor": 0,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-doctor",
+      "x": 180,
+      "y": 250,
+      "floor": 1,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-outpatient",
+      "x": 80,
+      "y": 250,
+      "floor": 1,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-radiology",
+      "x": 280,
+      "y": 250,
+      "floor": 1,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-pharmacy",
+      "x": 380,
+      "y": 250,
+      "floor": 1,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-waiting1",
+      "x": 480,
+      "y": 250,
+      "floor": 1,
+      "kind": "door",
+      "accessible": true
+    },
+    {
+      "id": "door-exit",
+      "x": 80,
+      "y": 350,
+      "floor": 0,
+      "kind": "door",
+      "accessible": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "f0-e0",
+      "from": "f0-c0",
+      "to": "f0-c1",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-e1",
+      "from": "f0-c1",
+      "to": "f0-c2",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-e2",
+      "from": "f0-c2",
+      "to": "f0-c3",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-e3",
+      "from": "f0-c3",
+      "to": "f0-c4",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-e4",
+      "from": "f0-c4",
+      "to": "f0-c5",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-e5",
+      "from": "f0-c5",
+      "to": "f0-c6",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-south-edge0",
+      "from": "f0-south0",
+      "to": "f0-south1",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-south-edge1",
+      "from": "f0-south1",
+      "to": "f0-south2",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-south-edge2",
+      "from": "f0-south2",
+      "to": "f0-south3",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-south-edge3",
+      "from": "f0-south3",
+      "to": "f0-south4",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-south-edge4",
+      "from": "f0-south4",
+      "to": "f0-south5",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-south-link4",
+      "from": "f0-c4",
+      "to": "f0-south3",
+      "distance": 11,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-south-link5",
+      "from": "f0-c5",
+      "to": "f0-south4",
+      "distance": 11,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f0-south-link6",
+      "from": "f0-c6",
+      "to": "f0-south5",
+      "distance": 11,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-e0",
+      "from": "f1-c0",
+      "to": "f1-c1",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-e1",
+      "from": "f1-c1",
+      "to": "f1-c2",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-e2",
+      "from": "f1-c2",
+      "to": "f1-c3",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-e3",
+      "from": "f1-c3",
+      "to": "f1-c4",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-e4",
+      "from": "f1-c4",
+      "to": "f1-c5",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-e5",
+      "from": "f1-c5",
+      "to": "f1-c6",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-south-edge0",
+      "from": "f1-south0",
+      "to": "f1-south1",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-south-edge1",
+      "from": "f1-south1",
+      "to": "f1-south2",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-south-edge2",
+      "from": "f1-south2",
+      "to": "f1-south3",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-south-edge3",
+      "from": "f1-south3",
+      "to": "f1-south4",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-south-edge4",
+      "from": "f1-south4",
+      "to": "f1-south5",
+      "distance": 10,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-south-link4",
+      "from": "f1-c4",
+      "to": "f1-south3",
+      "distance": 11,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-south-link5",
+      "from": "f1-c5",
+      "to": "f1-south4",
+      "distance": 11,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "f1-south-link6",
+      "from": "f1-c6",
+      "to": "f1-south5",
+      "distance": 11,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "lift",
+      "from": "f0-c5",
+      "to": "f1-c5",
+      "distance": 14,
+      "accessible": true,
+      "kind": "elevator"
+    },
+    {
+      "id": "stairs",
+      "from": "f0-c6",
+      "to": "f1-c6",
+      "distance": 9,
+      "accessible": false,
+      "kind": "stairs"
+    },
+    {
+      "id": "entrance-reception",
+      "from": "f0-c0",
+      "to": "door-reception",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-triage",
+      "from": "f0-c1",
+      "to": "door-triage",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-emergency",
+      "from": "f0-c2",
+      "to": "door-emergency",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-lab",
+      "from": "f0-c3",
+      "to": "door-lab",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-waiting0",
+      "from": "f0-c4",
+      "to": "door-waiting0",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-doctor",
+      "from": "f1-c1",
+      "to": "door-doctor",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-outpatient",
+      "from": "f1-c0",
+      "to": "door-outpatient",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-radiology",
+      "from": "f1-c2",
+      "to": "door-radiology",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-pharmacy",
+      "from": "f1-c3",
+      "to": "door-pharmacy",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-waiting1",
+      "from": "f1-c4",
+      "to": "door-waiting1",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    },
+    {
+      "id": "entrance-exit",
+      "from": "f0-c0",
+      "to": "door-exit",
+      "distance": 5,
+      "accessible": true,
+      "kind": "corridor"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "reception",
+      "names": {
+        "ar": "الاستقبال",
+        "en": "Reception",
+        "ur": "استقبالیہ",
+        "fr": "Accueil",
+        "tr": "Resepsiyon",
+        "id": "Resepsionis"
+      },
+      "number": "001",
+      "floor": 0,
+      "x": 38,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-reception",
+      "type": "reception",
+      "accessible": true
+    },
+    {
+      "id": "triage",
+      "names": {
+        "ar": "قسم الفرز",
+        "en": "Triage",
+        "ur": "ابتدائی معائنہ",
+        "fr": "Triage",
+        "tr": "Triyaj",
+        "id": "Triase"
+      },
+      "number": "104",
+      "floor": 0,
+      "x": 138,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-triage",
+      "type": "clinic",
+      "accessible": true
+    },
+    {
+      "id": "emergency",
+      "names": {
+        "ar": "عيادة الطوارئ",
+        "en": "Emergency clinic",
+        "ur": "ایمرجنسی",
+        "fr": "Urgences",
+        "tr": "Acil klinik",
+        "id": "Klinik darurat"
+      },
+      "number": "106",
+      "floor": 0,
+      "x": 238,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-emergency",
+      "type": "clinic",
+      "accessible": true
+    },
+    {
+      "id": "lab",
+      "names": {
+        "ar": "المختبر",
+        "en": "Laboratory",
+        "ur": "لیبارٹری",
+        "fr": "Laboratoire",
+        "tr": "Laboratuvar",
+        "id": "Laboratorium"
+      },
+      "number": "110",
+      "floor": 0,
+      "x": 338,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-lab",
+      "type": "lab",
+      "accessible": true
+    },
+    {
+      "id": "waiting0",
+      "names": {
+        "ar": "منطقة الانتظار",
+        "en": "Waiting area",
+        "ur": "انتظار گاہ",
+        "fr": "Salle d’attente",
+        "tr": "Bekleme alanı",
+        "id": "Ruang tunggu"
+      },
+      "number": "012",
+      "floor": 0,
+      "x": 438,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-waiting0",
+      "type": "waiting",
+      "accessible": true
+    },
+    {
+      "id": "doctor",
+      "names": {
+        "ar": "عيادة الباطنية",
+        "en": "Internal medicine",
+        "ur": "طب داخلی",
+        "fr": "Médecine interne",
+        "tr": "Dahiliye",
+        "id": "Penyakit dalam"
+      },
+      "number": "210",
+      "floor": 1,
+      "x": 138,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-doctor",
+      "type": "clinic",
+      "accessible": true
+    },
+    {
+      "id": "outpatient",
+      "names": {
+        "ar": "العيادات الخارجية",
+        "en": "Outpatient clinic",
+        "ur": "بیرونی مریض",
+        "fr": "Consultations",
+        "tr": "Poliklinik",
+        "id": "Rawat jalan"
+      },
+      "number": "208",
+      "floor": 1,
+      "x": 38,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-outpatient",
+      "type": "clinic",
+      "accessible": true
+    },
+    {
+      "id": "radiology",
+      "names": {
+        "ar": "الأشعة",
+        "en": "Radiology",
+        "ur": "ریڈیالوجی",
+        "fr": "Radiologie",
+        "tr": "Radyoloji",
+        "id": "Radiologi"
+      },
+      "number": "214",
+      "floor": 1,
+      "x": 238,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-radiology",
+      "type": "radiology",
+      "accessible": true
+    },
+    {
+      "id": "pharmacy",
+      "names": {
+        "ar": "الصيدلية",
+        "en": "Pharmacy",
+        "ur": "فارمیسی",
+        "fr": "Pharmacie",
+        "tr": "Eczane",
+        "id": "Apotek"
+      },
+      "number": "220",
+      "floor": 1,
+      "x": 338,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-pharmacy",
+      "type": "pharmacy",
+      "accessible": true
+    },
+    {
+      "id": "waiting1",
+      "names": {
+        "ar": "منطقة الانتظار",
+        "en": "Waiting area",
+        "ur": "انتظار گاہ",
+        "fr": "Salle d’attente",
+        "tr": "Bekleme alanı",
+        "id": "Ruang tunggu"
+      },
+      "number": "202",
+      "floor": 1,
+      "x": 438,
+      "y": 105,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-waiting1",
+      "type": "waiting",
+      "accessible": true
+    },
+    {
+      "id": "exit",
+      "names": {
+        "ar": "الخروج",
+        "en": "Exit",
+        "ur": "باہر نکلیں",
+        "fr": "Sortie",
+        "tr": "Çıkış",
+        "id": "Keluar"
+      },
+      "number": "000",
+      "floor": 0,
+      "x": 38,
+      "y": 350,
+      "width": 84,
+      "height": 145,
+      "nodeId": "door-exit",
+      "type": "exit",
+      "accessible": true
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "QR-f0-c0",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-c0",
+      "x": 80,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند الاستقبال · الطابق 0",
+      "names": {
+        "ar": "تقاطع الممرات عند الاستقبال · الطابق 0",
+        "en": "Corridor intersection near Reception · floor 0",
+        "ur": "راہداری کا چوراہا قریب استقبالیہ · منزل 0",
+        "fr": "Intersection des couloirs près de Accueil · étage 0",
+        "tr": "Koridor kavşağı yakınında Resepsiyon · kat 0",
+        "id": "Persimpangan koridor dekat Resepsionis · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-c1",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-c1",
+      "x": 180,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند قسم الفرز · الطابق 0",
+      "names": {
+        "ar": "تقاطع الممرات عند قسم الفرز · الطابق 0",
+        "en": "Corridor intersection near Triage · floor 0",
+        "ur": "راہداری کا چوراہا قریب ابتدائی معائنہ · منزل 0",
+        "fr": "Intersection des couloirs près de Triage · étage 0",
+        "tr": "Koridor kavşağı yakınında Triyaj · kat 0",
+        "id": "Persimpangan koridor dekat Triase · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-c2",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-c2",
+      "x": 280,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند عيادة الطوارئ · الطابق 0",
+      "names": {
+        "ar": "تقاطع الممرات عند عيادة الطوارئ · الطابق 0",
+        "en": "Corridor intersection near Emergency clinic · floor 0",
+        "ur": "راہداری کا چوراہا قریب ایمرجنسی · منزل 0",
+        "fr": "Intersection des couloirs près de Urgences · étage 0",
+        "tr": "Koridor kavşağı yakınında Acil klinik · kat 0",
+        "id": "Persimpangan koridor dekat Klinik darurat · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-c3",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-c3",
+      "x": 380,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند المختبر · الطابق 0",
+      "names": {
+        "ar": "تقاطع الممرات عند المختبر · الطابق 0",
+        "en": "Corridor intersection near Laboratory · floor 0",
+        "ur": "راہداری کا چوراہا قریب لیبارٹری · منزل 0",
+        "fr": "Intersection des couloirs près de Laboratoire · étage 0",
+        "tr": "Koridor kavşağı yakınında Laboratuvar · kat 0",
+        "id": "Persimpangan koridor dekat Laboratorium · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-c4",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-c4",
+      "x": 480,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند منطقة الانتظار · الطابق 0",
+      "names": {
+        "ar": "تقاطع الممرات عند منطقة الانتظار · الطابق 0",
+        "en": "Corridor intersection near Waiting area · floor 0",
+        "ur": "راہداری کا چوراہا قریب انتظار گاہ · منزل 0",
+        "fr": "Intersection des couloirs près de Salle d’attente · étage 0",
+        "tr": "Koridor kavşağı yakınında Bekleme alanı · kat 0",
+        "id": "Persimpangan koridor dekat Ruang tunggu · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-c5",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-c5",
+      "x": 580,
+      "y": 300,
+      "locationName": "المصعد · الطابق 0",
+      "names": {
+        "ar": "المصعد · الطابق 0",
+        "en": "Elevator · floor 0",
+        "ur": "لفٹ · منزل 0",
+        "fr": "Ascenseur · étage 0",
+        "tr": "Asansör · kat 0",
+        "id": "Lift · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-c6",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-c6",
+      "x": 680,
+      "y": 300,
+      "locationName": "الدرج · الطابق 0",
+      "names": {
+        "ar": "الدرج · الطابق 0",
+        "en": "Stairs · floor 0",
+        "ur": "سیڑھیاں · منزل 0",
+        "fr": "Escalier · étage 0",
+        "tr": "Merdiven · kat 0",
+        "id": "Tangga · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-south0",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-south0",
+      "x": 180,
+      "y": 410,
+      "locationName": "الممر الجنوبي 1 عند قسم الفرز · الطابق 0",
+      "names": {
+        "ar": "الممر الجنوبي 1 عند قسم الفرز · الطابق 0",
+        "en": "South corridor 1 near Triage · floor 0",
+        "ur": "جنوبی راہداری 1 قریب ابتدائی معائنہ · منزل 0",
+        "fr": "Couloir sud 1 près de Triage · étage 0",
+        "tr": "Güney koridoru 1 yakınında Triyaj · kat 0",
+        "id": "Koridor selatan 1 dekat Triase · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-south1",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-south1",
+      "x": 280,
+      "y": 410,
+      "locationName": "الممر الجنوبي 2 عند عيادة الطوارئ · الطابق 0",
+      "names": {
+        "ar": "الممر الجنوبي 2 عند عيادة الطوارئ · الطابق 0",
+        "en": "South corridor 2 near Emergency clinic · floor 0",
+        "ur": "جنوبی راہداری 2 قریب ایمرجنسی · منزل 0",
+        "fr": "Couloir sud 2 près de Urgences · étage 0",
+        "tr": "Güney koridoru 2 yakınında Acil klinik · kat 0",
+        "id": "Koridor selatan 2 dekat Klinik darurat · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-south2",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-south2",
+      "x": 380,
+      "y": 410,
+      "locationName": "الممر الجنوبي 3 عند المختبر · الطابق 0",
+      "names": {
+        "ar": "الممر الجنوبي 3 عند المختبر · الطابق 0",
+        "en": "South corridor 3 near Laboratory · floor 0",
+        "ur": "جنوبی راہداری 3 قریب لیبارٹری · منزل 0",
+        "fr": "Couloir sud 3 près de Laboratoire · étage 0",
+        "tr": "Güney koridoru 3 yakınında Laboratuvar · kat 0",
+        "id": "Koridor selatan 3 dekat Laboratorium · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-south3",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-south3",
+      "x": 480,
+      "y": 410,
+      "locationName": "الممر الجنوبي 4 عند منطقة الانتظار · الطابق 0",
+      "names": {
+        "ar": "الممر الجنوبي 4 عند منطقة الانتظار · الطابق 0",
+        "en": "South corridor 4 near Waiting area · floor 0",
+        "ur": "جنوبی راہداری 4 قریب انتظار گاہ · منزل 0",
+        "fr": "Couloir sud 4 près de Salle d’attente · étage 0",
+        "tr": "Güney koridoru 4 yakınında Bekleme alanı · kat 0",
+        "id": "Koridor selatan 4 dekat Ruang tunggu · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-south4",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-south4",
+      "x": 580,
+      "y": 410,
+      "locationName": "الممر الجنوبي 5 · الطابق 0",
+      "names": {
+        "ar": "الممر الجنوبي 5 · الطابق 0",
+        "en": "South corridor 5 · floor 0",
+        "ur": "جنوبی راہداری 5 · منزل 0",
+        "fr": "Couloir sud 5 · étage 0",
+        "tr": "Güney koridoru 5 · kat 0",
+        "id": "Koridor selatan 5 · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f0-south5",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "f0-south5",
+      "x": 680,
+      "y": 410,
+      "locationName": "الممر الجنوبي 6 · الطابق 0",
+      "names": {
+        "ar": "الممر الجنوبي 6 · الطابق 0",
+        "en": "South corridor 6 · floor 0",
+        "ur": "جنوبی راہداری 6 · منزل 0",
+        "fr": "Couloir sud 6 · étage 0",
+        "tr": "Güney koridoru 6 · kat 0",
+        "id": "Koridor selatan 6 · lantai 0"
+      }
+    },
+    {
+      "id": "QR-f1-c0",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-c0",
+      "x": 80,
+      "y": 300,
+      "locationName": "الممر عند العيادات الخارجية · الطابق 1",
+      "names": {
+        "ar": "الممر عند العيادات الخارجية · الطابق 1",
+        "en": "Corridor near Outpatient clinic · floor 1",
+        "ur": "راہداری قریب بیرونی مریض · منزل 1",
+        "fr": "Couloir près de Consultations · étage 1",
+        "tr": "Koridor yakınında Poliklinik · kat 1",
+        "id": "Koridor dekat Rawat jalan · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-c1",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-c1",
+      "x": 180,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند عيادة الباطنية · الطابق 1",
+      "names": {
+        "ar": "تقاطع الممرات عند عيادة الباطنية · الطابق 1",
+        "en": "Corridor intersection near Internal medicine · floor 1",
+        "ur": "راہداری کا چوراہا قریب طب داخلی · منزل 1",
+        "fr": "Intersection des couloirs près de Médecine interne · étage 1",
+        "tr": "Koridor kavşağı yakınında Dahiliye · kat 1",
+        "id": "Persimpangan koridor dekat Penyakit dalam · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-c2",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-c2",
+      "x": 280,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند الأشعة · الطابق 1",
+      "names": {
+        "ar": "تقاطع الممرات عند الأشعة · الطابق 1",
+        "en": "Corridor intersection near Radiology · floor 1",
+        "ur": "راہداری کا چوراہا قریب ریڈیالوجی · منزل 1",
+        "fr": "Intersection des couloirs près de Radiologie · étage 1",
+        "tr": "Koridor kavşağı yakınında Radyoloji · kat 1",
+        "id": "Persimpangan koridor dekat Radiologi · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-c3",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-c3",
+      "x": 380,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند الصيدلية · الطابق 1",
+      "names": {
+        "ar": "تقاطع الممرات عند الصيدلية · الطابق 1",
+        "en": "Corridor intersection near Pharmacy · floor 1",
+        "ur": "راہداری کا چوراہا قریب فارمیسی · منزل 1",
+        "fr": "Intersection des couloirs près de Pharmacie · étage 1",
+        "tr": "Koridor kavşağı yakınında Eczane · kat 1",
+        "id": "Persimpangan koridor dekat Apotek · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-c4",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-c4",
+      "x": 480,
+      "y": 300,
+      "locationName": "تقاطع الممرات عند منطقة الانتظار · الطابق 1",
+      "names": {
+        "ar": "تقاطع الممرات عند منطقة الانتظار · الطابق 1",
+        "en": "Corridor intersection near Waiting area · floor 1",
+        "ur": "راہداری کا چوراہا قریب انتظار گاہ · منزل 1",
+        "fr": "Intersection des couloirs près de Salle d’attente · étage 1",
+        "tr": "Koridor kavşağı yakınında Bekleme alanı · kat 1",
+        "id": "Persimpangan koridor dekat Ruang tunggu · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-c5",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-c5",
+      "x": 580,
+      "y": 300,
+      "locationName": "المصعد · الطابق 1",
+      "names": {
+        "ar": "المصعد · الطابق 1",
+        "en": "Elevator · floor 1",
+        "ur": "لفٹ · منزل 1",
+        "fr": "Ascenseur · étage 1",
+        "tr": "Asansör · kat 1",
+        "id": "Lift · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-c6",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-c6",
+      "x": 680,
+      "y": 300,
+      "locationName": "الدرج · الطابق 1",
+      "names": {
+        "ar": "الدرج · الطابق 1",
+        "en": "Stairs · floor 1",
+        "ur": "سیڑھیاں · منزل 1",
+        "fr": "Escalier · étage 1",
+        "tr": "Merdiven · kat 1",
+        "id": "Tangga · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-south0",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-south0",
+      "x": 180,
+      "y": 410,
+      "locationName": "الممر الجنوبي 1 عند عيادة الباطنية · الطابق 1",
+      "names": {
+        "ar": "الممر الجنوبي 1 عند عيادة الباطنية · الطابق 1",
+        "en": "South corridor 1 near Internal medicine · floor 1",
+        "ur": "جنوبی راہداری 1 قریب طب داخلی · منزل 1",
+        "fr": "Couloir sud 1 près de Médecine interne · étage 1",
+        "tr": "Güney koridoru 1 yakınında Dahiliye · kat 1",
+        "id": "Koridor selatan 1 dekat Penyakit dalam · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-south1",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-south1",
+      "x": 280,
+      "y": 410,
+      "locationName": "الممر الجنوبي 2 عند الأشعة · الطابق 1",
+      "names": {
+        "ar": "الممر الجنوبي 2 عند الأشعة · الطابق 1",
+        "en": "South corridor 2 near Radiology · floor 1",
+        "ur": "جنوبی راہداری 2 قریب ریڈیالوجی · منزل 1",
+        "fr": "Couloir sud 2 près de Radiologie · étage 1",
+        "tr": "Güney koridoru 2 yakınında Radyoloji · kat 1",
+        "id": "Koridor selatan 2 dekat Radiologi · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-south2",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-south2",
+      "x": 380,
+      "y": 410,
+      "locationName": "الممر الجنوبي 3 عند الصيدلية · الطابق 1",
+      "names": {
+        "ar": "الممر الجنوبي 3 عند الصيدلية · الطابق 1",
+        "en": "South corridor 3 near Pharmacy · floor 1",
+        "ur": "جنوبی راہداری 3 قریب فارمیسی · منزل 1",
+        "fr": "Couloir sud 3 près de Pharmacie · étage 1",
+        "tr": "Güney koridoru 3 yakınında Eczane · kat 1",
+        "id": "Koridor selatan 3 dekat Apotek · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-south3",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-south3",
+      "x": 480,
+      "y": 410,
+      "locationName": "الممر الجنوبي 4 عند منطقة الانتظار · الطابق 1",
+      "names": {
+        "ar": "الممر الجنوبي 4 عند منطقة الانتظار · الطابق 1",
+        "en": "South corridor 4 near Waiting area · floor 1",
+        "ur": "جنوبی راہداری 4 قریب انتظار گاہ · منزل 1",
+        "fr": "Couloir sud 4 près de Salle d’attente · étage 1",
+        "tr": "Güney koridoru 4 yakınında Bekleme alanı · kat 1",
+        "id": "Koridor selatan 4 dekat Ruang tunggu · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-south4",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-south4",
+      "x": 580,
+      "y": 410,
+      "locationName": "الممر الجنوبي 5 · الطابق 1",
+      "names": {
+        "ar": "الممر الجنوبي 5 · الطابق 1",
+        "en": "South corridor 5 · floor 1",
+        "ur": "جنوبی راہداری 5 · منزل 1",
+        "fr": "Couloir sud 5 · étage 1",
+        "tr": "Güney koridoru 5 · kat 1",
+        "id": "Koridor selatan 5 · lantai 1"
+      }
+    },
+    {
+      "id": "QR-f1-south5",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "f1-south5",
+      "x": 680,
+      "y": 410,
+      "locationName": "الممر الجنوبي 6 · الطابق 1",
+      "names": {
+        "ar": "الممر الجنوبي 6 · الطابق 1",
+        "en": "South corridor 6 · floor 1",
+        "ur": "جنوبی راہداری 6 · منزل 1",
+        "fr": "Couloir sud 6 · étage 1",
+        "tr": "Güney koridoru 6 · kat 1",
+        "id": "Koridor selatan 6 · lantai 1"
+      }
+    },
+    {
+      "id": "QR-door-reception",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "door-reception",
+      "x": 80,
+      "y": 250,
+      "locationName": "الاستقبال",
+      "names": {
+        "ar": "الاستقبال",
+        "en": "Reception",
+        "ur": "استقبالیہ",
+        "fr": "Accueil",
+        "tr": "Resepsiyon",
+        "id": "Resepsionis"
+      }
+    },
+    {
+      "id": "QR-door-triage",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "door-triage",
+      "x": 180,
+      "y": 250,
+      "locationName": "قسم الفرز",
+      "names": {
+        "ar": "قسم الفرز",
+        "en": "Triage",
+        "ur": "ابتدائی معائنہ",
+        "fr": "Triage",
+        "tr": "Triyaj",
+        "id": "Triase"
+      }
+    },
+    {
+      "id": "QR-door-emergency",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "door-emergency",
+      "x": 280,
+      "y": 250,
+      "locationName": "عيادة الطوارئ",
+      "names": {
+        "ar": "عيادة الطوارئ",
+        "en": "Emergency clinic",
+        "ur": "ایمرجنسی",
+        "fr": "Urgences",
+        "tr": "Acil klinik",
+        "id": "Klinik darurat"
+      }
+    },
+    {
+      "id": "QR-door-lab",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "door-lab",
+      "x": 380,
+      "y": 250,
+      "locationName": "المختبر",
+      "names": {
+        "ar": "المختبر",
+        "en": "Laboratory",
+        "ur": "لیبارٹری",
+        "fr": "Laboratoire",
+        "tr": "Laboratuvar",
+        "id": "Laboratorium"
+      }
+    },
+    {
+      "id": "QR-door-waiting0",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "door-waiting0",
+      "x": 480,
+      "y": 250,
+      "locationName": "منطقة الانتظار",
+      "names": {
+        "ar": "منطقة الانتظار",
+        "en": "Waiting area",
+        "ur": "انتظار گاہ",
+        "fr": "Salle d’attente",
+        "tr": "Bekleme alanı",
+        "id": "Ruang tunggu"
+      }
+    },
+    {
+      "id": "QR-door-doctor",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "door-doctor",
+      "x": 180,
+      "y": 250,
+      "locationName": "عيادة الباطنية",
+      "names": {
+        "ar": "عيادة الباطنية",
+        "en": "Internal medicine",
+        "ur": "طب داخلی",
+        "fr": "Médecine interne",
+        "tr": "Dahiliye",
+        "id": "Penyakit dalam"
+      }
+    },
+    {
+      "id": "QR-door-outpatient",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "door-outpatient",
+      "x": 80,
+      "y": 250,
+      "locationName": "العيادات الخارجية",
+      "names": {
+        "ar": "العيادات الخارجية",
+        "en": "Outpatient clinic",
+        "ur": "بیرونی مریض",
+        "fr": "Consultations",
+        "tr": "Poliklinik",
+        "id": "Rawat jalan"
+      }
+    },
+    {
+      "id": "QR-door-radiology",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "door-radiology",
+      "x": 280,
+      "y": 250,
+      "locationName": "الأشعة",
+      "names": {
+        "ar": "الأشعة",
+        "en": "Radiology",
+        "ur": "ریڈیالوجی",
+        "fr": "Radiologie",
+        "tr": "Radyoloji",
+        "id": "Radiologi"
+      }
+    },
+    {
+      "id": "QR-door-pharmacy",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "door-pharmacy",
+      "x": 380,
+      "y": 250,
+      "locationName": "الصيدلية",
+      "names": {
+        "ar": "الصيدلية",
+        "en": "Pharmacy",
+        "ur": "فارمیسی",
+        "fr": "Pharmacie",
+        "tr": "Eczane",
+        "id": "Apotek"
+      }
+    },
+    {
+      "id": "QR-door-waiting1",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-1",
+      "floor": 1,
+      "nodeId": "door-waiting1",
+      "x": 480,
+      "y": 250,
+      "locationName": "منطقة الانتظار",
+      "names": {
+        "ar": "منطقة الانتظار",
+        "en": "Waiting area",
+        "ur": "انتظار گاہ",
+        "fr": "Salle d’attente",
+        "tr": "Bekleme alanı",
+        "id": "Ruang tunggu"
+      }
+    },
+    {
+      "id": "QR-door-exit",
+      "hospitalId": "masarak-hospital",
+      "floorId": "floor-0",
+      "floor": 0,
+      "nodeId": "door-exit",
+      "x": 80,
+      "y": 350,
+      "locationName": "الخروج",
+      "names": {
+        "ar": "الخروج",
+        "en": "Exit",
+        "ur": "باہر نکلیں",
+        "fr": "Sortie",
+        "tr": "Çıkış",
+        "id": "Keluar"
+      }
+    }
+  ]
+}

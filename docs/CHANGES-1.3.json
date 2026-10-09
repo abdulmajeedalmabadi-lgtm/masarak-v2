@@ -1,0 +1,36 @@
+{
+  "version": "1.3.0",
+  "modifiedOrAdded": [
+    "README.md",
+    "docs/API.md",
+    "docs/CHANGES-1.3.json",
+    "docs/HYBRID-AR.md",
+    "docs/HYBRID-NAVIGATION.md",
+    "docs/VALIDATION.md",
+    "package-lock.json",
+    "package.json",
+    "scripts/test.mjs",
+    "server/app.ts",
+    "src/App.tsx",
+    "src/CorridorScene.tsx",
+    "src/Navigation3D.tsx",
+    "src/i18n.ts",
+    "src/services/MotionTrackingService.ts",
+    "src/services/NavigationTrackingService.ts",
+    "src/services/StepDetectionService.ts",
+    "src/style.css",
+    "src/useNavigationTracking.ts",
+    "tests/api.test.ts",
+    "tests/navigation3d.test.tsx",
+    "tests/tracking.test.ts",
+    "tests/ui.test.tsx"
+  ],
+  "validation": {
+    "tests": 75,
+    "testFiles": 9,
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "physicalDevices": "not tested",
+    "PostgreSQLRuntime": "not tested"
+  }
+}

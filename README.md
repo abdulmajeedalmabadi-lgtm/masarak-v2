@@ -94,3 +94,7 @@ Start navigation opens current-location selection; selecting a valid node enters
 ## Hybrid navigation (v1.3)
 
 Explicit motion/orientation permission, experimental calibrated step detection, graph interval progress with junction/floor stops, three isolated navigation modes, automatic destination-QR arrival, and live clinic/queue status extend the existing application. See [HYBRID-NAVIGATION.md](docs/HYBRID-NAVIGATION.md) for service design, permissions, limitations, physical-device checklist and verification.
+
+## Neon seed timeout repair
+
+Initial PostgreSQL seeding now writes dependency-ordered bulk batches in one transaction with a 120-second timeout and 15-second acquisition wait. Existing application saves remain unchanged. Failed transactions can be retried; populated databases are refused rather than overwritten. See [NEON-SEED-FIX.md](docs/NEON-SEED-FIX.md) for exact changes, optional settings and verification limits.

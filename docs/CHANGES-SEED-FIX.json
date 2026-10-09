@@ -1,0 +1,22 @@
+{
+  "projectVersion": "1.3.0",
+  "repair": "Neon seed transaction timeout",
+  "modifiedOrAdded": [
+    "server/store.ts",
+    "server/seed-store.ts",
+    "prisma/seed.ts",
+    "tests/seed.test.ts",
+    ".env.example",
+    "README.md",
+    "docs/NEON-SEED-FIX.md",
+    "docs/VALIDATION.md",
+    "docs/CHANGES-SEED-FIX.json"
+  ],
+  "checks": {
+    "tests": 81,
+    "testFiles": 10,
+    "typescript": "passed",
+    "productionBuild": "passed",
+    "liveNeon": "not available"
+  }
+}
